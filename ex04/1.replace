@@ -1,0 +1,12 @@
+
+total 72
+drwxr-xr-x 2 sbaghdad 2024_khouribga   13\nNov 17 16:00 .
+drwxr-xr-x 7 sbaghdad 2024_khouribga    66 Nov 14 23:33 ..
+-rw-r--r-- 1 sbaghdad 2024_khouribga     0 Nov 17 16:00 1
+-rwxr-xr-x 1 sbaghdad 2024_khouribga 30008 Nov 17 1\n\n FindAndReplace
+-rw-r--r-- 1 sbaghdad 2024_khouribga   667 Nov 17 1\n\n Finder.cpp
+-rw-r--r-- 1 sbaghdad 2024_khouribga   407 Nov 17 1\n\n Finder.hpp
+-rw-r--r-- 1 sbaghdad 2024_khouribga  7072 Nov 17 1\n\n Finder.o
+-rw-r--r-- 1 sbaghdad 2024_khouribga   231 Nov 17 1\n\n main.cpp
+-rw-r--r-- 1 sbaghdad 2024_khouribga 130\n Nov 17 1\n\n main.o
+-rw-r--r-- 1 sbaghdad 2024_khouribga   320 Nov 17 1\n\n Makefile
