@@ -2,11 +2,12 @@
 
 Finder::Finder(std::string s, const std::string search, const std::string replace)
 {
-    file.open(s);
+    file.open(s.c_str());
     s += ".replace";
-    output.open(s);
+    output.open(s.c_str());
     this->search = search;
     this->replace = replace;
+    input = "";
 }
 
 void    Finder::FindAndReplace(void)
@@ -14,32 +15,27 @@ void    Finder::FindAndReplace(void)
     int len;
     int j;
 
-    j = 0;
     len = input.length();
-    std::cout << search.length();
-    for (int j = 0; j < len; j++)
+    j = 0;
+    while (j < len)
     {
-        if (input[j] == search[0])
+        std::string s = input.substr(j, search.length());
+        if (s == search)
         {
-            if (this->input.compare(input.at(j), search.length(), search.c_str()))
-            {
-                output << replace;
-                j += search.length();
-            }
+            output << replace;
+            j += search.length();
         }
         else
+        {
             output << input[j];
+            j++;
+        }
     }
+    output.close();
 }
 
 void    Finder::readData(void)
 {
-    std::string s;
-    input = "";
-
-    while (std::getline(this->file, s))
-    {
-        input += "\n";
-        input += s;
-    }
+    std::getline(this->file, input, '\0');
+    file.close();
 }

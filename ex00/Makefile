@@ -1,4 +1,4 @@
-NAME=brain
+NAME=Walking_dead
 
 CXX=c++ -Wall -Wextra -Werror -std=c++98
 

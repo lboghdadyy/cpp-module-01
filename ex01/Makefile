@@ -1,5 +1,4 @@
-CXX = c++
-CFLAGS = -Wall -Wextra -Werror -std=c++98
+CXX = c++ -Wall -Wextra -Werror -std=c++98
 
 RM=rm -rf
 SOURCES=main.cpp Zombie.cpp zombieHord.cpp
@@ -11,8 +10,8 @@ all: $(NAME)
 $(NAME): $(OBJECTS)
 	$(CXX) $(OBJECTS) -o $(NAME)
 
-%.o: %.c Zombie.hpp
-	$(CXX) $(CFLAGS) -c $< -o $@
+%.o: %.cpp Zombie.hpp
+	$(CXX)  -c $< -o $@
 
 clean:
 	$(RM) $(OBJECTS)

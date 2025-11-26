@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanA.hpp                                         :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sbaghdad <sbaghdad@student.1337.ma>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/17 16:53:25 by sbaghdad          #+#    #+#             */
-/*   Updated: 2025/11/26 16:02:30 by sbaghdad         ###   ########.fr       */
+/*   Created: 2025/11/17 16:53:00 by sbaghdad          #+#    #+#             */
+/*   Updated: 2025/11/17 21:34:43 by sbaghdad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "Weapon.hpp"
+# include <iostream>
 
-class HumanA
+class Harl
 {
-	private:
-		Weapon		&w1;
-		std::string	name;
-	public:
-		void	attack();
-		HumanA(std::string str, Weapon &wep1);
-
+    private:
+        void    debug( void );
+        void    info( void );
+        void    warning( void );
+        void    error( void );
+    public:
+        void    complain(std::string level);
+        Harl();
 };
+
